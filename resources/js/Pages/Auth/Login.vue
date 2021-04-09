@@ -10,9 +10,9 @@
             {{ status }}
         </div>
 
-        <div class="block my-2  w-full">
-            Welcome to login page.
-        </div>
+        <p>
+            This is some change
+        </p>
 
         <form @submit.prevent="submit">
             <div>
