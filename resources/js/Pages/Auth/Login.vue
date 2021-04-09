@@ -10,6 +10,10 @@
             {{ status }}
         </div>
 
+        <div class="block my-2  w-full">
+            Welcome to login page.
+        </div>
+
         <form @submit.prevent="submit">
             <div>
                 <jet-label for="email" value="Email" />
