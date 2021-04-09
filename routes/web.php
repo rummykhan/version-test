@@ -15,6 +15,13 @@ use Inertia\Inertia;
 |
 */
 
+Route::get('/test', function () {
+    return response()->json([
+        'test' => true,
+        'app_name' => env('APP_NAME')
+    ]);
+});
+
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
