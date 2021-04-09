@@ -8,6 +8,7 @@ class DeployController extends Controller
 {
     public function index()
     {
-        shell_exec("git pull");
+        $output = shell_exec("git pull 2>&1");
+        echo $output;
     }
 }
